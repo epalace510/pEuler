@@ -1,20 +1,9 @@
-def palTest(num)
-  sNum=num.to_s
-  oStr=sNum.slice!((sNum.length/2)..sNum.length-1)
-  #If the string did not slice evenly, take the shared letter and replace it in
-  #the original string, at the end. (Ex: "Hello" would be split into "He" and "llo"
-  #. This would take the last l and put it at the end, to get "Hel" and "llo".
-  if num.to_s.length%2!=0
-    puts "IN the if"
-    sNum.insert(-1, oStr[0])
-  end
-  puts sNum
-  puts oStr
-  if(sNum.reverse==oStr)
+def divTest(num)
+  if num%1==0 && num%2==0 && num%3==0 && num%4==0 && num%5==0 && num%6==0 && num%7==0 && num%8==0 && num%9==0 && num%10==0 && num%11==0 && num%12==0 && num%13==0 && num%14==0 && num%15==0 && num%16==0 && num%17==0 && num%18==0 && num%19==0 && num%20==0
     return true
   else
     return false
   end
 end
 
-puts palTest(11811)
+puts divTest(9699690)
